@@ -1,0 +1,21 @@
+{
+  "name": "poisepal-site",
+  "version": "1.0.0",
+  "description": "PoisePal marketing site (job-candidate interview coach)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview --port 4173",
+    "screenshots": "node scripts/screenshots.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "playwright": "^1.64.1",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  },
+  "private": true
+}

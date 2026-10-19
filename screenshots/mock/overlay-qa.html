@@ -1,70 +1,25 @@
-<!doctype html><html><head><meta charset="utf-8">
-<!-- Static mock built from desktop/src/renderer/overlay.tsx markup + the app's real styles.css/desktop.css. -->
-<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="desktop.css">
-<style>
-:root{--brand:#0d9488;--brand-ink:#115e59;--brand-soft:#f0fdfa;--blue:#0d9488}
-html,body{margin:0;font-family:Inter,"Segoe UI",system-ui,sans-serif}
-body{width:1920px;height:1080px;background:linear-gradient(135deg,#0f172a,#134e4a);position:relative;overflow:hidden}
-.call{position:absolute;left:60px;top:70px;width:1260px;height:900px;background:#1f2937;border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.5);overflow:hidden}
-.call .top{height:46px;background:#111827;color:#d1d5db;display:flex;align-items:center;padding:0 18px;font:600 15px system-ui;gap:10px}
-.call .top i{width:12px;height:12px;border-radius:50%;display:inline-block}
-.tile{position:absolute;border-radius:12px;background:linear-gradient(160deg,#374151,#1f2937);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#e5e7eb}
-.av{width:150px;height:150px;border-radius:50%;background:#64748b;display:flex;align-items:center;justify-content:center;font:700 56px system-ui;color:#fff}
-.nm{position:absolute;left:14px;bottom:12px;background:rgba(0,0,0,.55);padding:5px 10px;border-radius:6px;font:600 15px system-ui}
-.cap{position:absolute;left:50%;transform:translateX(-50%);bottom:110px;background:rgba(0,0,0,.7);color:#fff;font:500 22px system-ui;padding:10px 18px;border-radius:8px;white-space:nowrap}
-.ctl{position:absolute;bottom:0;left:0;right:0;height:80px;background:#111827;display:flex;justify-content:center;align-items:center;gap:18px}
-.ctl b{width:48px;height:48px;border-radius:50%;background:#374151;display:block}.ctl b.r{background:#dc2626;width:70px;border-radius:24px}
-.win{position:absolute;right:60px;top:40px;width:500px;height:1000px;border-radius:12px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.08);background:var(--bg)}
-.win .ov{height:100%}
-.ov-bar.live{background:#115e59}
-.ov .nextq{background:linear-gradient(135deg,#0f766e,#14b8a6)}
-.ov .sugg .body{font-size:13.5px}.ov .sugg .title{font-size:15px}
-.ov-title{font-size:14px}.ov-sub{font-size:12px}
-.ov .line{font-size:13px}.ov-check{font-size:13px}
-.box{border:1.5px solid #9ca3af;border-radius:4px;display:inline-block;flex:none;margin-top:1px}
-.ov-check.done{color:#6b7280;text-decoration:line-through}.ov-check.done .box{background:#10b981;border-color:#10b981}
-.qcard{background:#fff;border:1px solid var(--line);border-left:4px solid #b45309;border-radius:10px;padding:10px 12px}
-.qcard .lbl{font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#b45309}
-.qcard .q{font-size:15px;font-weight:700;margin-top:3px;line-height:1.35}
-.star{display:grid;grid-template-columns:22px 1fr;gap:5px 6px;margin-top:4px}
-.star span{font-weight:800;color:#0f766e}
-.badge{font-size:11px;color:#047857;background:#ecfdf5;border-radius:99px;padding:2px 8px;font-weight:700}
-*{animation:none!important;transition:none!important}.ov .sugg .body{font-size:15px!important}.ov .sugg .title{font-size:16.5px!important}.qcard .q{font-size:17px}.ov .line,.ov-check{font-size:14px!important}</style></head><body>
-<div class="call"><div class="top"><i style="background:#ef4444"></i><i style="background:#f59e0b"></i><i style="background:#22c55e"></i><span style="margin-left:12px">Video call · Senior PM interview — Northwind</span></div>
- <div class="tile" style="left:20px;top:66px;width:1220px;height:640px"><div class="av" style="background:#0f766e">SR</div><div style="margin-top:14px;font:600 20px system-ui">Sarah Reyes · Hiring Manager</div><div class="nm">Sarah Reyes</div></div>
- <div class="cap">"Tell me about a time you led a difficult project."</div>
- <div class="tile" style="right:30px;top:520px;width:250px;height:160px;border:2px solid #14b8a6"><div class="av" style="width:70px;height:70px;font-size:26px;background:#475569">AK</div><div class="nm" style="font-size:12px">You</div></div>
- <div class="ctl"><b></b><b></b><b></b><b class="r"></b></div></div>
-
-<div class="win"><div class="ov">
- <div class="ov-bar live"><span class="dot"></span><div class="grow" style="min-width:0"><div class="ov-title">PoisePal is assisting</div><div class="ov-sub">12:47 · Alex Kim · Northwind (behavioral)</div></div>
-  <button class="btn sm">📋</button><button class="btn sm">▴</button><button class="btn sm">⤢</button><button class="btn sm">✕</button></div>
- <div class="ov-body">
-  <div class="qcard"><div class="lbl">Interviewer asked</div><div class="q">“Tell me about a time you led a difficult project.”</div></div>
-  <div class="card sugg answer"><button class="btn ghost sm x">✕</button>
-   <div class="kind">Answer · STAR<span class="src">AI</span></div>
-   <div class="title">Lead with the payments migration at Acme</div>
-   <div class="body"><div class="star">
-    <span>S</span><div>Legacy payments platform had 3 outages a quarter; migration had stalled twice.</div>
-    <span>T</span><div>I owned getting 40+ merchants moved in 6 months without downtime.</div>
-    <span>A</span><div>Split it into 4 waves, set a weekly risk review, and won Eng + Finance buy-in with a rollback plan.</div>
-    <span>R</span><div>Shipped 2 weeks early, zero downtime, outages down 90%. Team now reuses the playbook.</div>
-   </div></div></div>
-  <div class="card sugg insight"><div class="kind">Talking points<span class="src">Playbook</span></div>
-   <div class="body">• Name the conflict and how you resolved it
-• Quantify the result (time, %, $)
-• Close with what you learned</div></div>
-  <div class="card" style="padding:10px"><div class="row small" style="margin-bottom:4px"><b class="grow">Checklist</b><span class="muted">3/5</span></div>
-   <div class="progress" style="margin-bottom:6px"><div style="width:60%"></div></div>
-   <div class="ov-check done"><span class="box" style="width:14px;height:14px"></span>Introduce yourself in 60 seconds</div>
-   <div class="ov-check done"><span class="box" style="width:14px;height:14px"></span>Why Northwind</div>
-   <div class="ov-check"><span class="box" style="width:14px;height:14px"></span>Leadership story (STAR)</div>
-   <div class="ov-check"><span class="box" style="width:14px;height:14px"></span>Ask about team roadmap</div></div>
-  <div class="card" style="padding:8px">
-   <div class="line"><span class="who Them">Them</span><span class="said">Great. Tell me about a time you led a difficult project.</span></div>
-   <div class="line interim"><span class="who Me">Me</span><span class="said">Sure — at Acme we had a payments migration that…</span></div></div>
-  <button class="btn danger sm">■ End call</button>
- </div>
- <div class="ov-foot"><span class="badge">🛡 Hidden from screen share</span><div class="grow"></div><span>Opacity 100%</span><input type="range" value="100"><button class="btn sm">Click-through</button></div>
-</div></div>
-</body></html>
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0}body{width:1920px;height:1080px;font-family:Inter,"DejaVu Sans",Arial,sans-serif;background:#0b1220;overflow:hidden;position:relative}
+.call{position:absolute;left:0;top:0;width:1920px;height:1080px;background:url(woman.png) 30% center/cover}
+.call:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,0) 45%,rgba(4,20,24,.55) 100%)}
+.tag{position:absolute;left:32px;bottom:110px;background:rgba(0,0,0,.6);color:#fff;padding:10px 18px;border-radius:10px;font-size:22px;z-index:2}
+.bar{position:absolute;left:0;right:0;bottom:0;height:84px;background:rgba(10,14,22,.85);z-index:2;display:flex;gap:18px;align-items:center;padding-left:40px}.bar i{width:48px;height:48px;border-radius:50%;background:#334155}.bar i.r{background:#dc2626}
+.ov{position:absolute;right:40px;top:40px;width:720px;bottom:120px;background:rgba(255,255,255,.97);border-radius:20px;border-top:8px solid #0f766e;box-shadow:0 20px 60px rgba(0,0,0,.45);padding:28px 34px;z-index:3;color:#0f172a;display:flex;flex-direction:column;gap:16px}
+.brand{font-weight:800;font-size:28px;color:#0f766e}.lbl{font-size:15px;font-weight:700;color:#14b8a6;text-transform:uppercase;letter-spacing:1px}
+.q{font-size:22px;font-weight:600}.t{font-size:24px;font-weight:800;color:#0f766e}
+.s{display:flex;gap:12px;font-size:18px;line-height:1.35}.s b{background:#0f766e;color:#fff;border-radius:6px;min-width:30px;height:30px;display:flex;align-items:center;justify-content:center}
+ul{padding-left:22px;font-size:18px;line-height:1.5}.ck{font-size:18px}.ck span{color:#14b8a6;font-weight:800}
+.ft{margin-top:auto;font-size:15px;color:#475569;border-top:1px solid #e2e8f0;padding-top:12px}.ft:before{content:"● ";color:#14b8a6}
+</style></head><body><div class="call"></div><div class="tag">You · Interview</div><div class="bar"><i></i><i></i><i></i><i class="r"></i></div>
+<div class="ov" id="ov">
+<div class="brand">PoisePal</div>
+<div><div class="lbl">Interviewer asked</div><div class="q">Tell me about a time you led a difficult project.</div></div>
+<div><div class="lbl">Answer · STAR</div><div class="t">Lead with the payments migration at Acme</div></div>
+<div class="s"><b>S</b><div>Legacy payments platform had 3 outages a quarter; migration had stalled twice.</div></div>
+<div class="s"><b>T</b><div>I owned getting 40+ merchants moved in 6 months without downtime.</div></div>
+<div class="s"><b>A</b><div>Split it into 4 waves, set a weekly risk review, and won Eng + Finance buy-in with a rollback plan.</div></div>
+<div class="s"><b>R</b><div>Shipped 2 weeks early, zero downtime, outages down 90%. Team now reuses the playbook.</div></div>
+<div><div class="lbl">Talking points</div><ul><li>Name the conflict and how you resolved it</li><li>Quantify the result (time, %, $)</li><li>Close with what you learned</li></ul></div>
+<div class="ck"><span>✓</span> Leadership story (STAR)</div>
+<div class="ft">Hidden from screen share</div>
+</div></body></html>

@@ -1,0 +1,40 @@
+/* Desktop-specific tweaks on top of the shared UI styles. */
+.app .content { max-width: 880px; margin: 0 auto; width: 100%; }
+.app .tabs { justify-content: center; }
+
+/* ---------- overlay ---------- */
+.overlay-body { background: var(--bg); overflow: hidden; }
+.ov { display: flex; flex-direction: column; height: 100vh; }
+.ov-bar { -webkit-app-region: drag; user-select: none; display: flex; align-items: center; gap: 8px; padding: 8px 8px 8px 10px; background: #111827; color: #f9fafb; }
+.ov-bar.live { background: #064e3b; }
+.ov-bar.demo { background: #312e81; }
+.ov-bar button, .ov-bar select, .ov-bar input { -webkit-app-region: no-drag; }
+.ov-bar .btn { background: rgba(255,255,255,.1); border-color: transparent; color: inherit; padding: 4px 7px; }
+.ov-bar .btn:hover { background: rgba(255,255,255,.2); }
+.ov-bar .dot { width: 9px; height: 9px; border-radius: 50%; background: #9ca3af; flex: none; }
+.ov-bar.live .dot, .ov-bar.demo .dot { background: #34d399; animation: pulse 1.6s infinite; }
+.ov-title { font-weight: 800; font-size: 12.5px; line-height: 1.2; }
+.ov-sub { font-size: 11px; opacity: .8; font-variant-numeric: tabular-nums; }
+.ov-body { flex: 1; overflow-y: auto; padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+.ov-foot { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-top: 1px solid var(--line); background: #fff; font-size: 11px; color: var(--muted); }
+.ov-foot input[type=range] { width: 90px; }
+.ov .nextq { padding: 10px; }
+.ov .nextq .q { font-size: 13.5px; }
+.ov .sugg { padding: 8px 10px; }
+.ov .sugg .body { font-size: 12.5px; }
+.ov-collapsed .ov-body, .ov-collapsed .ov-foot { display: none; }
+.ov-mini-q { -webkit-app-region: drag; background: #4f46e5; color: #fff; font-weight: 700; padding: 6px 10px; font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ov .line { font-size: 12px; }
+.ov-check { display: flex; gap: 6px; align-items: flex-start; font-size: 12px; padding: 3px 0; cursor: pointer; }
+
+/* translucent overlay (BrowserWindow.setOpacity < 1): the whole window fades, so push text to maximum contrast */
+.ov-translucent .ov-body, .ov-translucent .card, .ov-translucent .nextq .q, .ov-translucent .line, .ov-translucent .ov-check { color: #000; }
+.ov-translucent .sugg .title, .ov-translucent .nextq .q { font-weight: 800; }
+.ov-translucent .sugg .body, .ov-translucent .line, .ov-translucent .ov-check, .ov-translucent .banner { font-weight: 600; }
+.ov-translucent .muted, .ov-translucent .ov-foot { color: #1f2937; }
+.ov-translucent .card { border-color: #9ca3af; }
+/* click-through grab handle */
+.ov-bar .btn.ov-handle { background: #f59e0b; color: #111827; font-weight: 700; white-space: nowrap; }
+.ov-bar .btn.ov-handle:hover { background: #fbbf24; }
+.ov-foot .btn { padding: 2px 6px; font-size: 11px; }
+.ov-click-through .ov-foot [data-testid=ov-click-through] { background: #fef3c7; border-color: #f59e0b; color: #92400e; }

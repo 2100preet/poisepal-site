@@ -38,8 +38,8 @@
           <li><a href="#faq">FAQ</a></li>
         </ul>
         <div class="nav-ctas">
-          <a class="btn btn-ghost btn-sm" href="#download">Apps</a>
-          <a class="btn btn-primary btn-sm" href="#pilot">Start free pilot</a>
+          <a class="btn btn-ghost btn-sm" href="#how-it-works">See how it works</a>
+          <a class="btn btn-primary btn-sm" href="#get-started">Download</a>
         </div>
       </nav>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
@@ -58,12 +58,11 @@
           <h1 id="hero-title">Walk into interviews <span class="accent">calm and prepared.</span></h1>
           <p class="lede">Load your resume, the job description and the company. During the interview, PoisePal privately suggests concise answers, talking points and STAR-structured responses — on your screen only.</p>
           <div class="cta-row">
-            <a class="btn btn-primary btn-lg" href="#pilot">Start free pilot</a>
-            <!-- TODO(launch): link real signed Mac/Windows installers here once published -->
-            <a class="btn btn-ghost btn-lg" href="#pilot">Join the pilot for early access</a>
+            <a class="btn btn-primary btn-lg" href="#get-started">Download / Get started</a>
+            <a class="btn btn-ghost btn-lg" href="#how-it-works">▶ Watch how it works</a>
           </div>
           <ul class="hero-points" aria-label="Highlights">
-            <li>Chrome extension + Mac/Windows desktop app</li>
+            <li>Desktop app for Mac and Windows</li>
             <li>No bot joins your interview</li>
             <li>Hosted AI or your own AI keys (coming with launch)</li>
           </ul>
@@ -153,27 +152,14 @@
         <div class="products" id="download">
           <article class="product-card">
             <div class="product-copy">
-              <p class="tag">Free</p>
-              <h3>Chrome extension</h3>
-              <p class="product-for">For <strong>Google Meet, Microsoft Teams and Zoom</strong> in Chrome</p>
-              <p>It finds your meeting tab by itself. Suggestions appear in Chrome’s side panel or a pop-out window, never on the meeting page itself. It warns you when you start presenting.</p>
-              <!-- TODO(launch): replace with the Chrome Web Store listing URL once published -->
-              <a class="btn btn-primary" href="#pilot">Join the pilot for early access</a>
-            </div>
-            <figure class="frame product-shot product-shot-tall">
-              <picture><source srcset="/assets/screenshots/04-demo-live.webp" type="image/webp" /><img src="/assets/screenshots/04-demo-live.png" width="840" height="1800" loading="lazy" decoding="async" alt="PoisePal Chrome side panel during a demo call, with live coaching cards during a demo interview." /></picture>
-            </figure>
-          </article>
-          <article class="product-card">
-            <div class="product-copy">
               <p class="tag">Mac &amp; Windows</p>
               <h3>Desktop app</h3>
               <p class="product-for">For <strong>Zoom</strong>, <strong>Microsoft Teams</strong> and other desktop meeting apps</p>
-              <p>A compact, always-on-top overlay you can collapse, resize and fade, plus a full main window. Its windows are hidden from screen share on macOS (tested); Windows support is in testing.</p>
+              <p>A compact, always-on-top overlay you can collapse, resize and fade, plus a full main window. Its windows are hidden from screen share on macOS and Windows.</p>
               <p class="product-for">macOS 13+ · Windows 10/11</p>
               <div class="cta-row cta-row-tight">
-                <!-- TODO(launch): replace with real signed macOS and Windows installer download URLs -->
-                <a class="btn btn-primary" href="#pilot">Join the pilot for early access</a>
+                <a class="btn btn-primary" href="https://github.com/2100preet/poisepal/releases/download/v0.5.0/PoisePal-0.5.0-win-x64.zip">Download for Windows</a>
+                <a class="btn btn-ghost" href="#download-mac">Mac: coming soon</a>
               </div>
             </div>
             <figure class="frame product-shot product-shot-overlay">
@@ -193,20 +179,16 @@
           <p class="section-sub">PoisePal is a private tool for the candidate. It doesn’t join as a participant or post anything to the interview.</p>
           <ul class="checks">
             <li><strong>No bot participant.</strong> PoisePal never joins the interview, posts to chat, or draws on the meeting page.</li>
-            <li><strong>Hidden from screen share on macOS (tested); Windows support in testing.</strong> The desktop overlay and main window ask the OS to exclude them from screen capture. This is on by default and tested on macOS. Windows uses the same OS setting but is still being tested, so check your setup before you rely on it.</li>
-            <li><strong>Presenting warnings (extension).</strong> If you start presenting in Meet, Teams or Zoom in the browser, PoisePal reminds you to share a tab or window instead of your whole screen.</li>
-            <li><strong>You always know when it’s listening.</strong> It only starts when you press Start, and it shows an “assisting” indicator in the panel or overlay, on the toolbar badge, and in the tray or menu bar.</li>
+            <li><strong>Hidden from screen share on macOS and Windows.</strong> The desktop overlay and main window ask the OS to exclude them from screen capture. This is on by default.</li>
+                        <li><strong>You always know when it’s listening.</strong> It only starts when you press Start, and it shows an “assisting” indicator in the overlay and in the tray or menu bar.</li>
             <li><strong>Your data stays yours.</strong> With your own AI keys, audio and text go straight from your device to the providers you choose. With PoisePal’s hosted AI (coming with launch), audio still streams directly from your device to the speech-to-text provider, and our server passes suggestion requests to the AI provider without storing or logging them. No audio is stored, and call history stays on your device.</li>
           </ul>
           <div class="callout" role="note">
             <h3>The honest limits</h3>
-            <p>A browser extension can’t hide its side panel if you share your <em>entire screen</em>. PoisePal can only warn you, so share a tab or a single window. On desktop, hiding from screen share is tested on macOS; Windows support is still in testing, and some capture tools ignore the OS exclusion flag (some macOS 15+ ScreenCaptureKit setups among them), so test with your meeting app before you rely on it.</p>
+            <p>Some capture tools ignore the OS screen-capture exclusion flag (some macOS 15+ ScreenCaptureKit setups among them), so check with your meeting app before you rely on it.</p>
           </div>
         </div>
         <div class="privacy-visual">
-          <figure class="frame">
-            <picture><source srcset="/assets/screenshots/05-presenting-reminder.webp" type="image/webp" /><img src="/assets/screenshots/05-presenting-reminder.png" width="840" height="1800" loading="lazy" decoding="async" alt="PoisePal side panel showing a 'You're presenting in Meet' reminder that suggests sharing a tab or window, with a Pop out button." /></picture>
-          </figure>
           <figure class="frame overlay-collapsed">
             <picture><source srcset="/assets/screenshots/desktop-07-overlay-collapsed.webp" type="image/webp" /><img src="/assets/screenshots/desktop-07-overlay-collapsed.png" width="380" height="104" loading="lazy" decoding="async" alt="The desktop overlay collapsed to a slim bar." /></picture>
             <figcaption>Collapse the overlay to a slim bar between cues.</figcaption>
@@ -223,10 +205,9 @@
           <h2 id="int-title">Works where your interviews already happen</h2>
         </header>
         <ul class="int-grid">
-          <li class="int"><span class="int-name">Zoom</span><span class="int-meta">Desktop app (Mac/Windows) · web client in Chrome</span><span class="badge badge-ok">Available</span></li>
-          <li class="int"><span class="int-name">Microsoft Teams</span><span class="int-meta">Desktop app (Mac/Windows) · Teams on the web in Chrome</span><span class="badge badge-ok">Available</span></li>
-          <li class="int"><span class="int-name">Google Meet</span><span class="int-meta">Chrome extension</span><span class="badge badge-ok">Available</span></li>
-          <li class="int int-soon"><span class="int-name">HubSpot</span><span class="int-meta">Optional CRM import (not required for candidates)</span><span class="badge">Coming soon</span></li>
+          <li class="int"><span class="int-name">Zoom</span><span class="int-meta">Desktop app (Mac/Windows) · web client</span><span class="badge badge-ok">Available</span></li>
+          <li class="int"><span class="int-name">Microsoft Teams</span><span class="int-meta">Desktop app (Mac/Windows) · Teams on the web</span><span class="badge badge-ok">Available</span></li>
+          <li class="int"><span class="int-name">Google Meet</span><span class="int-meta">In your browser, with the desktop app</span><span class="badge badge-ok">Available</span></li>
         </ul>
         <div class="ai-split">
           <article class="ai-card">
@@ -238,8 +219,8 @@
             <p>Connect your own speech-to-text (Deepgram) and language model (OpenAI or Google Gemini) keys. You choose the models and pay those providers directly. Unlimited on Pro (your own keys) for $29/mo ($24/mo billed yearly), and included with Pro Hosted, Team and Business.</p>
           </article>
         </div>
-        <p class="fineprint center">Use PoisePal’s hosted AI (60 minutes a month on Free, 600 on Pro Hosted, 1,000 per seat on Team Hosted) or bring your own Deepgram/OpenAI/Gemini keys. You can switch any time in Settings. Either way, live calls use your PoisePal account: one seat covers 2 devices and one live call at a time. Accounts and hosted AI are built and coming with launch; until then, try the no-setup demo or join the pilot.</p>
-        <p class="fineprint">Zoom, Microsoft Teams, Google Meet, Chrome and HubSpot are trademarks of their respective owners. PoisePal is not affiliated with or endorsed by them.</p>
+        <p class="fineprint center">Use PoisePal’s hosted AI (60 minutes a month on Free, 600 on Pro Hosted, 1,000 per seat on Team Hosted) or bring your own Deepgram/OpenAI/Gemini keys. You can switch any time in Settings. Either way, live calls use your PoisePal account: one seat covers 2 devices and one live call at a time. Accounts and hosted AI are built and coming with launch; until then, try the no-setup demo in the app.</p>
+        <p class="fineprint">Zoom, Microsoft Teams and Google Meet are trademarks of their respective owners. PoisePal is not affiliated with or endorsed by them.</p>
       </div>
     </section>
 
@@ -261,12 +242,12 @@
             <p class="price"><span class="amt">$0</span></p>
             <p class="billed">&nbsp;</p>
             <ul class="plan-list">
-              <li>Chrome extension for Meet, Teams &amp; Zoom on the web</li>
+              <li>Desktop app for Mac and Windows</li>
               <li>60 hosted AI minutes a month (coming with launch)</li>
               <li>Demo call mode, no setup needed</li>
               <li>Your account works on 2 devices</li>
             </ul>
-            <a class="btn btn-ghost btn-block" href="#pilot">Start free</a>
+            <a class="btn btn-ghost btn-block" href="#get-started">Download free</a>
           </article>
           <article class="plan" data-plan="pro_byok">
             <h3>Pro <span class="plan-sub">(your own keys)</span></h3>
@@ -275,12 +256,11 @@
             <p class="billed" data-yearly="Billed yearly ($288/yr)" data-monthly="Billed monthly">Billed yearly ($288/yr)</p>
             <ul class="plan-list">
               <li>Everything in Free (2 devices per account)</li>
-              <li>Desktop app for the Zoom &amp; Teams apps</li>
-              <li>Unlimited interviews with your Deepgram + OpenAI/Gemini keys</li>
+                            <li>Unlimited interviews with your Deepgram + OpenAI/Gemini keys</li>
               <li>You pay those providers directly</li>
               <li>Post-interview summaries &amp; thank-you drafts</li>
             </ul>
-            <a class="btn btn-ghost btn-block" href="#pilot">Choose Pro (own keys)</a>
+            <a class="btn btn-ghost btn-block" href="#get-started">Get started with Pro</a>
           </article>
           <article class="plan plan-featured" data-plan="pro" aria-label="Pro Hosted plan, most popular for individual reps">
             <p class="plan-flag">Most popular</p>
@@ -292,9 +272,9 @@
               <li>Everything in Pro (your own keys)</li>
               <li>600 hosted AI minutes a month (10 hours of interviews; coming with launch)</li>
               <li>Switch to your own keys any time</li>
-              <li>Overlay hidden from screen share on macOS (tested)</li>
+              <li>Overlay hidden from screen share</li>
             </ul>
-            <a class="btn btn-primary btn-block" href="#pilot">Choose Pro Hosted</a>
+            <a class="btn btn-primary btn-block" href="#get-started">Get started with Pro Hosted</a>
           </article>
           <article class="plan" data-plan="team" aria-label="Team Hosted plan">
             <h3>Team Hosted</h3>
@@ -309,7 +289,7 @@
               <li>Central billing &amp; seat management</li>
               <li>Priority support</li>
             </ul>
-            <a class="btn btn-ghost btn-block" href="#pilot">Start a team pilot</a>
+            <a class="btn btn-ghost btn-block" href="#get-started">Get started for your team</a>
           </article>
           <article class="plan" data-plan="business">
             <h3>Business</h3>
@@ -323,7 +303,7 @@
               <li>Onboarding for your cohort</li>
               <li>Volume pricing</li>
             </ul>
-            <a class="btn btn-ghost btn-block" href="#pilot">Talk to us</a>
+            <a class="btn btn-ghost btn-block" href="#get-started">Get started</a>
           </article>
         </div>
         <p class="fineprint center">Prices in USD, excluding applicable taxes. Hosted AI minutes are call minutes and reset each month. With your own keys, Deepgram and OpenAI/Gemini bill you directly; PoisePal never sees those charges. Every plan uses a PoisePal account for live calls: one seat covers 2 devices and one live call at a time (Business: 2). Accounts and hosted AI are coming with launch.</p>
@@ -347,15 +327,15 @@
           </details>
           <details>
             <summary>Can the other people on the call see PoisePal?</summary>
-            <div class="faq-a"><p>PoisePal never joins as a participant, posts to chat, or adds anything to the meeting page. On desktop, PoisePal’s windows are hidden from screen share on macOS (tested). Windows support uses the same OS setting and is still being tested. In Chrome, sharing a tab or window keeps the side panel out of view, but sharing your entire screen will show it. Some capture tools ignore the OS exclusion flag, so test your setup first. PoisePal is meant to help you prepare and respond; it isn’t meant to hide the fact that you’re using notes or tools.</p></div>
+            <div class="faq-a"><p>PoisePal never joins as a participant, posts to chat, or adds anything to the meeting page. PoisePal’s windows are hidden from screen share on macOS and Windows. Some capture tools ignore the OS exclusion flag, so test your setup first. PoisePal is meant to help you prepare and respond; it isn’t meant to hide the fact that you’re using notes or tools.</p></div>
           </details>
           <details>
             <summary>Does PoisePal record my calls?</summary>
             <div class="faq-a"><p>PoisePal transcribes audio live so it can suggest cues, and it saves the transcript, summary and notes to History on your device. It doesn’t record video. Audio is sent to the speech-to-text provider for transcription: with your own Deepgram key, or with PoisePal’s hosted AI once it launches. With hosted AI, audio streams from your device directly to Deepgram, and PoisePal’s server only counts minutes; it doesn’t store or log transcripts.</p></div>
           </details>
           <details>
-            <summary>What’s the difference between the extension and the desktop app?</summary>
-            <div class="faq-a"><p>The free Chrome extension works with browser calls in Chrome (Google Meet, Microsoft Teams on the web and Zoom’s web client) and shows cues in Chrome’s side panel. The desktop app for Mac and Windows works with the Zoom and Microsoft Teams desktop apps and shows cues in an always-on-top overlay. Its windows are hidden from screen share on macOS (tested); Windows support is in testing.</p></div>
+            <summary>Which meeting apps does PoisePal work with?</summary>
+            <div class="faq-a"><p>PoisePal is a desktop app for Mac and Windows. It works with the Zoom and Microsoft Teams desktop apps, Google Meet and other meeting apps, and shows cues in an always-on-top overlay. Its windows are hidden from screen share on macOS and Windows.</p></div>
           </details>
           <details>
             <summary>Do I need my own AI keys?</summary>
@@ -371,79 +351,60 @@
           </details>
           <details>
             <summary>Can I use PoisePal on more than one computer, or share it?</summary>
-            <div class="faq-a"><p>Your PoisePal account is your license, not the download. Each seat can be signed in on 2 devices (say, your laptop’s Chrome and the desktop app) and run one live call at a time. Sign in on a third device and PoisePal asks which one to sign out; Settings lists your devices so you can sign one out remotely. Teams get one seat per rep, and the admin invites people and assigns seats. The demo call works without an account.</p></div>
+            <div class="faq-a"><p>Your PoisePal account is your license, not the download. Each seat can be signed in on 2 devices (say, your laptop and your desktop) and run one live call at a time. Sign in on a third device and PoisePal asks which one to sign out; Settings lists your devices so you can sign one out remotely. Teams get one seat per rep, and the admin invites people and assigns seats. The demo call works without an account.</p></div>
           </details>
           <details>
             <summary>How accurate are the suggestions?</summary>
             <div class="faq-a"><p>Suggestions are only as good as the brief you give PoisePal and the quality of the audio. AI output can be wrong, so treat cues as prompts, not scripts, and double-check facts like pricing and security claims before you say them. Headphones help a lot with transcription quality.</p></div>
           </details>
           <details>
-            <summary>Does it work with my CRM?</summary>
-            <div class="faq-a"><p>Today you paste or upload deal notes into a brief. A HubSpot integration is coming soon. Other CRMs aren’t supported yet; tell us what you use in the pilot form.</p></div>
+            <summary>What goes into an interview brief?</summary>
+            <div class="faq-a"><p>Paste or upload your resume, the job description, the company name and the interview type (behavioral, technical, case, hiring manager and so on). PoisePal uses that brief to tailor suggested answers, talking points and STAR-structured stories to the role. Briefs are stored on your device.</p></div>
           </details>
           <details>
-            <summary>What does a pilot involve?</summary>
-            <div class="faq-a"><p>Tell us about your team below. We’ll help you set up the extension or desktop app and a few briefs, run it on real calls for a set period, and review what worked. Pilot terms are agreed with each team.</p></div>
+            <summary>Is PoisePal a web app?</summary>
+            <div class="faq-a"><p>No. Live coaching runs in the PoisePal desktop app for Mac and Windows, for Zoom, Teams, Google Meet and other meeting apps. This website is just for downloads and information.</p></div>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- PILOT FORM -->
-    <section id="pilot" class="section pilot" aria-labelledby="pilot-title">
-      <div class="container pilot-grid">
-        <div>
-          <p class="kicker">Free pilot</p>
-          <h2 id="pilot-title">Try PoisePal with your team</h2>
-          <p class="section-sub">Tell us a little about your team and we’ll get back to you to set up a pilot. No credit card required.</p>
-          <ul class="checks checks-compact">
-            <li>Help setting up briefs from your real playbook</li>
-            <li>Extension for browser calls (Meet, Teams, Zoom), desktop app for the Zoom and Teams apps</li>
-            <li>Hosted AI or your own AI keys, with accounts at launch</li>
-          </ul>
+    <!-- HOW IT WORKS / WALKTHROUGH -->
+    <section id="how-it-works" class="section" aria-labelledby="how-title">
+      <div class="container">
+        <p class="kicker center">How it works</p>
+        <h2 id="how-title" class="center">Watch the walkthrough</h2>
+        <p class="section-sub center">Install the Mac or Windows app, load your brief, join your interview as usual, press Start.</p>
+        <div class="frame" style="max-width:960px;margin:24px auto 0;">
+          <video controls playsinline preload="metadata" poster="/poisepal-site/assets/walkthrough-poster.png" width="1280" height="720" style="width:100%;height:auto;display:block;border-radius:12px;">
+            <source src="/poisepal-site/assets/walkthrough.mp4" type="video/mp4" />
+            Your browser can’t play this video. <a href="/poisepal-site/assets/walkthrough.mp4">Download the walkthrough (MP4)</a>.
+          </video>
         </div>
-        <!--
-          TODO(pilot-form): this form is NOT connected to anything yet.
-          To go live, either:
-            1) Formspree: create a form at https://formspree.io, set action="https://formspree.io/f/<YOUR_FORM_ID>",
-               and set data-live="true" on the <form> so the JS stops blocking submission; or
-            2) mailto: set action="mailto:pilots@<your-domain>" method="post" enctype="text/plain" and data-live="true".
-        -->
-        <form class="pilot-form" action="https://formspree.io/f/TODO_FORM_ID" method="POST" data-live="false" novalidate data-pilot-form>
-          <!-- TODO(pilot-form): this form isn't connected yet; submitting shows a notice and sends nothing (see src/main.ts). -->
-          <div class="field">
-            <label for="f-name">Full name</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required />
-            <p class="err" id="f-name-err" aria-live="polite"></p>
-          </div>
-          <div class="field">
-            <label for="f-email">Work email</label>
-            <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required />
-            <p class="err" id="f-email-err" aria-live="polite"></p>
-          </div>
-          <div class="field">
-            <label for="f-company">Company</label>
-            <input id="f-company" name="company" type="text" autocomplete="organization" required />
-            <p class="err" id="f-company-err" aria-live="polite"></p>
-          </div>
-          <div class="field">
-            <label for="f-size">Team or cohort size</label>
-            <select id="f-size" name="team_size" required>
-              <option value="">Select…</option>
-              <option>Just me</option>
-              <option>2–5</option>
-              <option>6–20</option>
-              <option>21–50</option>
-              <option>51–200</option>
-              <option>200+</option>
-            </select>
-            <p class="err" id="f-size-err" aria-live="polite"></p>
-          </div>
-          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
-          <button class="btn btn-primary btn-block btn-lg" type="submit">Request a pilot</button>
-          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
-          <p class="fineprint">By submitting, you agree we may contact you about PoisePal. See our <a href="privacy.html">Privacy Policy</a>.</p>
-        </form>
+      </div>
+    </section>
+
+    <!-- GET STARTED -->
+    <section id="get-started" class="section pilot" aria-labelledby="gs-title">
+      <div class="container">
+        <p class="kicker center">Get started</p>
+        <h2 id="gs-title" class="center">Download PoisePal</h2>
+        <p class="section-sub center">PoisePal isn’t a web app. Coaching runs in the desktop app for Mac and Windows.</p>
+        <div class="products" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:24px;">
+          <article class="product-card" id="download-mac"><div class="product-copy">
+            <p class="tag">macOS 13+</p><h3>PoisePal for Mac</h3>
+            <p>Desktop overlay for the Zoom and Teams desktop apps. Hidden from screen share.</p>
+            <a class="btn btn-ghost btn-block" href="#download-mac" aria-disabled="true">Mac: coming soon</a>
+            <p class="fineprint">The Mac build is on its way.</p>
+          </div></article>
+          <article class="product-card" id="download-windows"><div class="product-copy">
+            <p class="tag">Windows 10/11</p><h3>PoisePal for Windows</h3>
+            <p>Same overlay for the Zoom and Teams desktop apps. Hidden from screen share.</p>
+            <a class="btn btn-primary btn-block" href="https://github.com/2100preet/poisepal/releases/download/v0.5.0/PoisePal-0.5.0-win-x64.zip">Download for Windows</a>
+            <p class="fineprint">Windows 10/11 (x64). Unzip, then run AudioConfigService.exe in the PoisePal folder. <a href="https://github.com/2100preet/poisepal/releases/latest">All releases</a></p>
+          </div></article>
+        </div>
+        <p class="center" style="margin-top:20px;"><a class="btn btn-ghost" href="#how-it-works">See how it works</a></p>
       </div>
     </section>
   </main>

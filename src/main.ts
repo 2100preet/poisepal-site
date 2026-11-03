@@ -26,6 +26,12 @@ billingButtons.forEach((btn) =>
   btn.addEventListener('click', () => {
     const period = btn.dataset.billing as 'yearly' | 'monthly';
     billingButtons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+    // Subscribe buttons open the checkout page with the chosen billing period.
+    document.querySelectorAll<HTMLAnchorElement>('a[data-buy]').forEach((a) => {
+      const u = new URL(a.href);
+      u.searchParams.set('interval', period === 'yearly' ? 'year' : 'month');
+      a.href = u.toString();
+    });
     document.querySelectorAll<HTMLElement>('[data-yearly][data-monthly]').forEach((el) => {
       const v = el.dataset[period];
       if (v) el.textContent = v;

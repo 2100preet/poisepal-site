@@ -39,7 +39,7 @@
         </ul>
         <div class="nav-ctas">
           <a class="btn btn-ghost btn-sm" href="#how-it-works">See how it works</a>
-          <a class="btn btn-primary btn-sm" href="#get-started">Download</a>
+          <a class="btn btn-primary btn-sm" href="#pricing">Get PoisePal</a>
         </div>
       </nav>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
@@ -58,13 +58,13 @@
           <h1 id="hero-title">Walk into interviews <span class="accent">calm and prepared.</span></h1>
           <p class="lede">Load your resume, the job description and the company. Use PoisePal to prepare and rehearse, then — where your interview’s guidelines allow — get concise answers, talking points and STAR-structured responses on your screen during the call.</p>
           <div class="cta-row">
-            <a class="btn btn-primary btn-lg" href="#get-started">Download / Get started</a>
+            <a class="btn btn-primary btn-lg" href="#pricing">Get started</a>
             <a class="btn btn-ghost btn-lg" href="#how-it-works">▶ Watch how it works</a>
           </div>
           <ul class="hero-points" aria-label="Highlights">
             <li>Desktop app for Mac and Windows</li>
             <li>No bot joins your interview</li>
-            <li>Hosted AI or your own AI keys (coming with launch)</li>
+            <li>Hosted AI or your own AI keys</li>
           </ul>
         </div>
         <div class="hero-visual">
@@ -155,10 +155,10 @@
               <p class="tag">Mac &amp; Windows</p>
               <h3>Desktop app</h3>
               <p class="product-for">For <strong>Zoom</strong>, <strong>Microsoft Teams</strong> and other desktop meeting apps</p>
-              <p>A compact, always-on-top overlay you can collapse, resize and fade, plus a full main window. Its windows are hidden from screen share on macOS and Windows.</p>
+              <p>A compact, always-on-top overlay you can collapse, resize and fade, plus a full main window. Its windows are hidden from screen share on Windows 10/11 and macOS 14 and older. On macOS 15 and newer, Apple’s screen-capture system can still see them (see <a href="#privacy">the honest limits</a>).</p>
               <p class="product-for">macOS 13+ · Windows 10/11</p>
               <div class="cta-row cta-row-tight">
-                <a class="btn btn-primary" href="https://github.com/2100preet/poisepal/releases/download/v0.5.0/PoisePal-Setup-0.5.0-win-x64.exe">Download for Windows</a>
+                <a class="btn btn-primary" href="https://github.com/2100preet/poisepal/releases/download/v0.6.0/PoisePal-Setup-0.6.0-win-x64.exe">Download for Windows</a>
                 <a class="btn btn-ghost" href="#download-mac">Download for Mac</a>
               </div>
             </div>
@@ -179,13 +179,13 @@
           <p class="section-sub">PoisePal is a private tool for the candidate. It doesn’t join as a participant or post anything to the interview.</p>
           <ul class="checks">
             <li><strong>No bot participant.</strong> PoisePal never joins the interview, posts to chat, or draws on the meeting page.</li>
-            <li><strong>Hidden from screen share on macOS and Windows.</strong> The desktop overlay and main window ask the OS to exclude them from screen capture. This is on by default.</li>
+            <li><strong>Hidden from screen share on Windows 10/11 and macOS 14 and older.</strong> The desktop overlay and main window ask the OS to exclude them from screen capture, and this is on by default. On Windows the windows are removed from the capture entirely. <strong>On macOS 15 and newer this protection can’t be guaranteed</strong> (see below).</li>
                         <li><strong>You always know when it’s listening.</strong> It only starts when you press Start, and it shows an “assisting” indicator in the overlay and in the tray or menu bar.</li>
-            <li><strong>Your data stays yours.</strong> With your own AI keys, audio and text go straight from your device to the providers you choose. With PoisePal’s hosted AI (coming with launch), audio still streams directly from your device to the speech-to-text provider, and our server passes suggestion requests to the AI provider without storing or logging them. No audio is stored, and call history stays on your device.</li>
+            <li><strong>Your data stays yours.</strong> With your own AI keys, audio and text go straight from your device to the providers you choose. With PoisePal’s hosted AI, audio still streams directly from your device to the speech-to-text provider, and our server passes suggestion requests to the AI provider without storing or logging them. No audio is stored, and call history stays on your device.</li>
           </ul>
           <div class="callout" role="note">
             <h3>The honest limits</h3>
-            <p>Some capture tools ignore the OS screen-capture exclusion flag (some macOS 15+ ScreenCaptureKit setups among them), so check with your meeting app before you rely on it.</p>
+            <p>Apple changed macOS 15 (Sequoia) and later so that the window-hiding flag is ignored by ScreenCaptureKit, the framework behind the built-in screen recorder and many meeting apps. On those Macs PoisePal’s windows can show up in a share or recording even though protection is on, and PoisePal shows a warning when it detects this. If you use a Mac on macOS 15 or newer, share a single window or browser tab instead of your entire screen, and test your setup with a private call first. Linux isn’t supported for hiding at all. PoisePal is meant to help you prepare and respond, not to hide that you’re using notes or tools.</p>
           </div>
         </div>
         <div class="privacy-visual">
@@ -211,15 +211,15 @@
         </ul>
         <div class="ai-split">
           <article class="ai-card">
-            <h3>Use PoisePal’s hosted AI <span class="badge">Coming with launch</span></h3>
-            <p>Sign in with your email and start, with no provider accounts or keys. 60 minutes a month on Free, 600 on Pro Hosted, 1,000 per seat on Team Hosted. A usage meter in Settings shows the minutes you have left this month.</p>
+            <h3>Use PoisePal’s hosted AI</h3>
+            <p>Sign in with your email and start, with no provider accounts or keys. 600 minutes a month on Pro Hosted, 1,000 per seat on Team Hosted. A usage meter in Settings shows the minutes you have left this month.</p>
           </article>
           <article class="ai-card">
             <h3>Or bring your own keys</h3>
             <p>Connect your own speech-to-text (Deepgram) and language model (OpenAI, Google Gemini or DeepSeek) keys. You choose the models and pay those providers directly. Unlimited on Pro (your own keys) for $29/mo ($24/mo billed yearly), and included with Pro Hosted, Team and Business.</p>
           </article>
         </div>
-        <p class="fineprint center">Use PoisePal’s hosted AI (60 minutes a month on Free, 600 on Pro Hosted, 1,000 per seat on Team Hosted) or bring your own Deepgram/OpenAI/Gemini/DeepSeek keys. You can switch any time in Settings. Either way, live calls use your PoisePal account: one seat covers 2 devices and one live call at a time. Accounts and hosted AI are built and coming with launch; until then, try the no-setup demo in the app.</p>
+        <p class="fineprint center">Use PoisePal’s hosted AI (600 minutes a month on Pro Hosted, 1,000 per seat on Team Hosted) or bring your own Deepgram/OpenAI/Gemini/DeepSeek keys. You can switch any time in Settings. Either way, live calls need a PoisePal account with an active subscription: one seat covers 2 devices and one live call at a time. The no-setup demo call in the app is free and needs no account.</p>
         <p class="fineprint">Zoom, Microsoft Teams and Google Meet are trademarks of their respective owners. PoisePal is not affiliated with or endorsed by them.</p>
       </div>
     </section>
@@ -229,7 +229,7 @@
       <div class="container">
         <header class="section-head">
           <p class="kicker">Pricing</p>
-          <h2 id="pricing-title">Start free. Upgrade when it earns its keep.</h2>
+          <h2 id="pricing-title">Try the demo free. Subscribe to go live.</h2>
           <div class="billing-toggle" role="group" aria-label="Billing period">
             <button type="button" class="toggle-opt" aria-pressed="false" data-billing="yearly">Yearly <span class="save">save up to 26%</span></button>
             <button type="button" class="toggle-opt" aria-pressed="true" data-billing="monthly">Monthly</button>
@@ -238,16 +238,16 @@
         <div class="price-grid price-grid-5">
           <article class="plan" data-plan="free">
             <h3>Free</h3>
-            <p class="plan-desc">Try PoisePal on real interviews.</p>
+            <p class="plan-desc">Try the app with the demo call. No card needed.</p>
             <p class="price"><span class="amt">$0</span></p>
             <p class="billed">&nbsp;</p>
             <ul class="plan-list">
               <li>Desktop app for Mac and Windows</li>
-              <li>60 hosted AI minutes a month (coming with launch)</li>
-              <li>Demo call mode, no setup needed</li>
-              <li>Your account works on 2 devices</li>
+              <li>Demo call mode, no setup or account needed</li>
+              <li>Prep, brief and practice tools</li>
+              <li><strong>Live calls need a paid plan</strong></li>
             </ul>
-            <a class="btn btn-ghost btn-block" href="#get-started">Download free</a>
+            <a class="btn btn-ghost btn-block" href="#get-started">Download the app</a>
           </article>
           <article class="plan" data-plan="pro_byok">
             <h3>Pro <span class="plan-sub">(your own keys)</span></h3>
@@ -255,12 +255,12 @@
             <p class="price"><span class="amt" data-yearly="$24" data-monthly="$29">$29</span><span class="per">/mo</span></p>
             <p class="billed" data-yearly="Billed yearly ($288/yr)" data-monthly="Billed monthly">Billed monthly · or $24/mo yearly</p>
             <ul class="plan-list">
-              <li>Everything in Free (2 devices per account)</li>
+              <li>Everything in Free, plus live calls (2 devices per account)</li>
               <li>Unlimited interviews with your Deepgram + OpenAI, Gemini or DeepSeek keys</li>
               <li>You pay those providers directly</li>
               <li>Post-interview summaries &amp; thank-you drafts</li>
             </ul>
-            <a class="btn btn-ghost btn-block" href="#get-started">Get started with Pro</a>
+            <a class="btn btn-ghost btn-block" href="https://poisepal-api.vercel.app/buy?plan=pro_byok&amp;interval=month" data-buy="pro_byok">Subscribe to Pro</a>
           </article>
           <article class="plan plan-featured" data-plan="pro" aria-label="Pro Hosted plan, most popular for individual reps">
             <p class="plan-flag">Most popular</p>
@@ -270,11 +270,11 @@
             <p class="billed" data-yearly="Billed yearly ($348/yr)" data-monthly="Billed monthly">Billed monthly</p>
             <ul class="plan-list">
               <li>Everything in Pro (your own keys)</li>
-              <li>600 hosted AI minutes a month (10 hours of interviews; coming with launch)</li>
+              <li>600 hosted AI minutes a month (10 hours of interviews)</li>
               <li>Switch to your own keys any time</li>
-              <li>Overlay hidden from screen share</li>
+              <li>Overlay hidden from screen share on Windows and macOS 14 or older</li>
             </ul>
-            <a class="btn btn-primary btn-block" href="#get-started">Get started with Pro Hosted</a>
+            <a class="btn btn-primary btn-block" href="https://poisepal-api.vercel.app/buy?plan=pro&amp;interval=month" data-buy="pro">Subscribe to Pro Hosted</a>
           </article>
           <article class="plan" data-plan="team" aria-label="Team Hosted plan">
             <h3>Team Hosted</h3>
@@ -289,7 +289,7 @@
               <li>Central billing &amp; seat management</li>
               <li>Priority support</li>
             </ul>
-            <a class="btn btn-ghost btn-block" href="#get-started">Get started for your team</a>
+            <a class="btn btn-ghost btn-block" href="https://poisepal-api.vercel.app/buy?plan=team&amp;interval=month" data-buy="team">Subscribe as a team</a>
           </article>
           <article class="plan" data-plan="business">
             <h3>Business</h3>
@@ -303,10 +303,10 @@
               <li>Onboarding for your cohort</li>
               <li>Volume pricing</li>
             </ul>
-            <a class="btn btn-ghost btn-block" href="#get-started">Get started</a>
+            <a class="btn btn-ghost btn-block" href="mailto:hello@poisepal.com?subject=PoisePal%20Business">Contact us</a>
           </article>
         </div>
-        <p class="fineprint center">Prices in USD, excluding applicable taxes. Hosted AI minutes are call minutes and reset each month. With your own keys, Deepgram and OpenAI/Gemini/DeepSeek bill you directly; PoisePal never sees those charges. Every plan uses a PoisePal account for live calls: one seat covers 2 devices and one live call at a time (Business: 2). Accounts and hosted AI are coming with launch.</p>
+        <p class="fineprint center">Prices in USD, excluding applicable taxes. Hosted AI minutes are call minutes and reset each month. With your own keys, Deepgram and OpenAI/Gemini/DeepSeek bill you directly; PoisePal never sees those charges. Live calls need a PoisePal account with an active subscription (sign up and pay by card through Stripe; manage or cancel any time from your account): one seat covers 2 devices and one live call at a time (Business: 2). The demo call is free.</p>
       </div>
     </section>
 
@@ -331,7 +331,7 @@
           </details>
           <details>
             <summary>Can the other people on the call see PoisePal?</summary>
-            <div class="faq-a"><p>PoisePal never joins as a participant, posts to chat, or adds anything to the meeting page. PoisePal’s windows are hidden from screen share on macOS and Windows. Some capture tools ignore the OS exclusion flag, so test your setup first. PoisePal is meant to help you prepare and respond; it isn’t meant to hide the fact that you’re using notes or tools.</p></div>
+            <div class="faq-a"><p>PoisePal never joins as a participant, posts to chat, or adds anything to the meeting page. PoisePal’s windows are hidden from screen share on Windows 10/11 and on macOS 14 and older. On macOS 15 (Sequoia) and newer, Apple’s screen-capture system ignores the window-hiding flag, so the built-in recorder and some meeting apps can still see PoisePal; share a single window or tab there, and test your setup first. PoisePal is meant to help you prepare and respond; it isn’t meant to hide the fact that you’re using notes or tools.</p></div>
           </details>
           <details>
             <summary>Does PoisePal record my calls?</summary>
@@ -339,23 +339,23 @@
           </details>
           <details>
             <summary>Which meeting apps does PoisePal work with?</summary>
-            <div class="faq-a"><p>PoisePal is a desktop app for Mac and Windows. It works with the Zoom and Microsoft Teams desktop apps, Google Meet and other meeting apps, and shows cues in an always-on-top overlay. Its windows are hidden from screen share on macOS and Windows.</p></div>
+            <div class="faq-a"><p>PoisePal is a desktop app for Mac and Windows. It works with the Zoom and Microsoft Teams desktop apps, Google Meet and other meeting apps, and shows cues in an always-on-top overlay. Its windows are hidden from screen share on Windows 10/11 and macOS 14 and older; on macOS 15+ they can still be captured by some screen-share apps.</p></div>
           </details>
           <details>
             <summary>Do I need my own AI keys?</summary>
-            <div class="faq-a"><p>No. Hosted AI needs no keys: 60 minutes a month on Free, 600 on Pro Hosted and 1,000 per seat on Team Hosted. Or bring your own Deepgram/OpenAI/Gemini/DeepSeek keys for unlimited use on Pro (your own keys), Pro Hosted, Team or Business. Free includes the hosted minutes only. Accounts and hosted AI are built and coming with launch. A demo call mode works with no keys and no account.</p></div>
+            <div class="faq-a"><p>No. Hosted AI needs no keys: 600 minutes a month on Pro Hosted and 1,000 per seat on Team Hosted. Or bring your own Deepgram/OpenAI/Gemini/DeepSeek keys for unlimited use on Pro (your own keys), Pro Hosted, Team or Business. Live calls always need an active subscription; the demo call mode works with no keys and no account.</p></div>
           </details>
           <details>
             <summary>How does “Pro (your own keys)” billing work?</summary>
             <div class="faq-a"><p>You pay PoisePal $29/month ($24/month billed yearly) for the apps and features. Speech-to-text and AI usage go on <strong>your own Deepgram and OpenAI, Google Gemini or DeepSeek accounts</strong>: you pay those providers directly, at their prices and under their terms, and PoisePal never sees or marks up those charges. Your calls go straight from your device to those providers. As a rough guide, 10 hours of calls is about $9 of Deepgram transcription (both sides of the call) plus around $1–3 of AI at small-model list prices; check the providers’ current pricing.</p></div>
           </details>
           <details>
-            <summary>What happens when my Free hosted minutes run out?</summary>
-            <div class="faq-a"><p>Free includes 60 hosted AI minutes a month. When they’re used up, live transcription stops for the rest of that call with a clear message; your playbook cards, notes and the call summary still work, and the demo call is always available. You then have two options: wait for minutes to reset on the 1st of the month (UTC), or upgrade, either to Pro Hosted for more hosted minutes or to Pro (your own keys) and plug in your own Deepgram and OpenAI, Gemini or DeepSeek keys for unlimited use, paid directly to those providers. Your briefs and History stay on your device either way. Note: accounts, hosted AI and paid plans are built but not live yet, so checkout and upgrades aren’t available until launch.</p></div>
+            <summary>What happens when my hosted minutes run out?</summary>
+            <div class="faq-a"><p>Pro Hosted includes 600 hosted AI minutes a month and Team Hosted 1,000 per seat. When they’re used up, live transcription stops for the rest of that call with a clear message; your playbook cards, notes and the call summary still work, and the demo call is always available. You can wait for minutes to reset on the 1st of the month (UTC), or switch to your own Deepgram and OpenAI, Gemini or DeepSeek keys for unlimited use, paid directly to those providers. Your briefs and History stay on your device either way.</p></div>
           </details>
           <details>
             <summary>Can I use PoisePal on more than one computer, or share it?</summary>
-            <div class="faq-a"><p>Your PoisePal account is your license, not the download. Each seat can be signed in on 2 devices (say, your laptop and your desktop) and run one live call at a time. Sign in on a third device and PoisePal asks which one to sign out; Settings lists your devices so you can sign one out remotely. Teams get one seat per rep, and the admin invites people and assigns seats. The demo call works without an account.</p></div>
+            <div class="faq-a"><p>Your PoisePal account is your license, not the download. Each seat can be signed in on 2 devices (say, your laptop and your desktop) and run one live call at a time. Sign in on a third device and PoisePal asks which one to sign out; Settings lists your devices so you can sign one out remotely. Teams get one seat per rep, and the admin invites people and assigns seats. The demo call works without an account; live calls need an active subscription.</p></div>
           </details>
           <details>
             <summary>How accurate are the suggestions?</summary>
@@ -393,18 +393,18 @@
       <div class="container">
         <p class="kicker center">Get started</p>
         <h2 id="gs-title" class="center">Download PoisePal</h2>
-        <p class="section-sub center">PoisePal isn’t a web app. Coaching runs in the desktop app for Mac and Windows.</p>
+        <p class="section-sub center">PoisePal isn’t a web app. Coaching runs in the desktop app for Mac and Windows. The demo call is free; live calls need an <a href="#pricing">active subscription</a>, and you sign in inside the app.</p>
         <div class="products" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:24px;">
           <article class="product-card" id="download-mac"><div class="product-copy">
             <p class="tag">macOS 13+</p><h3>PoisePal for Mac</h3>
-            <p>Desktop overlay for the Zoom and Teams desktop apps. Hidden from screen share.</p>
-            <a class="btn btn-primary btn-block" href="https://github.com/2100preet/poisepal/releases/download/v0.5.0/PoisePal-0.5.0-mac-universal.dmg">Download for Mac</a>
+            <p>Desktop overlay for the Zoom and Teams desktop apps. Hidden from screen share on macOS 14 and older; on macOS 15+ it may still be visible to some screen-share apps, so share one window, not your whole screen.</p>
+            <a class="btn btn-primary btn-block" href="https://github.com/2100preet/poisepal/releases/download/v0.6.0/PoisePal-0.6.0-mac-universal.dmg">Download for Mac</a>
             <p class="fineprint">macOS 13+ universal (Apple silicon and Intel) .dmg. The app is unsigned, so on first launch right-click (or Control-click) the app and choose “Open”, then click “Open” again. <a href="https://github.com/2100preet/poisepal/releases/latest">All releases</a></p>
           </div></article>
           <article class="product-card" id="download-windows"><div class="product-copy">
             <p class="tag">Windows 10/11</p><h3>PoisePal for Windows</h3>
-            <p>Same overlay for the Zoom and Teams desktop apps. Hidden from screen share.</p>
-            <a class="btn btn-primary btn-block" href="https://github.com/2100preet/poisepal/releases/download/v0.5.0/PoisePal-Setup-0.5.0-win-x64.exe">Download for Windows</a>
+            <p>Same overlay for the Zoom and Teams desktop apps. Hidden from screen share on Windows 10 (2004+) and 11.</p>
+            <a class="btn btn-primary btn-block" href="https://github.com/2100preet/poisepal/releases/download/v0.6.0/PoisePal-Setup-0.6.0-win-x64.exe">Download for Windows</a>
             <p class="fineprint">Windows 10/11 (x64) installer. The app is unsigned, so Windows may show a SmartScreen prompt: click “More info”, then “Run anyway”. <a href="https://github.com/2100preet/poisepal/releases/latest">All releases</a></p>
           </div></article>
         </div>
